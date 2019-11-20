@@ -1,0 +1,7 @@
+<form class="my-form" [formGroup]="form" (ngSubmit)="access()" role="form" novalidate="" style="margin-top: 30px;">
+  <div><input formControlName="marca" matInput name="marca"></div>
+  <div><input formControlName="modelo" matInput name="modelo"></div>
+  <div><input formControlName="placa" matInput name="placa"></div>  
+
+  <button type="submit" [disabled]="form.invalid" color="primary">Salvar</button>
+</form>
